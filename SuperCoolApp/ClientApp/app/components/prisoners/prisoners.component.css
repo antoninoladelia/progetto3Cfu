@@ -1,0 +1,43 @@
+﻿
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+input [type=text]
+{
+    width: 15%;
+    padding:12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Red */
+.delete {
+    background-color: white;
+    color: red;
+    border: thin;
+    padding: 5px 5px;
+
+}
+
+
+

@@ -1,0 +1,62 @@
+<h1>Prisoners List </h1>
+<th><label>Search(Case Sensitive) <input #search (keyup)="0" class="form-control"></label></th>
+
+<p *ngIf="!prisoners"><em>Loading...</em></p>
+
+
+<div class="bottom" align="right">
+
+    <button type="button" class="add btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add</button>
+    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" (click)="refresh()">Refresh</button>
+
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                <h4 class="modal-title">Add Prisoner</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <label> Name: <input #name class="form-control" /></label>
+                    <label>Date: <input #date class="form-control" /></label>
+                    <label>Crime: <input #crime class="form-control" /></label>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click)="addPrisoner(name.value,date.value,crime.value)" id="bntsave">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<table class='table' *ngIf="prisoners">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Crime</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prisoner of prisoners | searchFilter: search.value">
+            <td>{{ prisoner.id }}</td>
+            <td>{{ prisoner.namePrisoner }}</td>
+            <td>{{ prisoner.dateOfBirth }}</td>
+            <td>{{ prisoner.crime }}</td>
+            <td ><button  type="button" class="delete btn-sm" data-dismiss="modal" (click)="deletePrisoner(prisoner.id)">X</button></td>
+        </tr>
+    </tbody>
+</table>

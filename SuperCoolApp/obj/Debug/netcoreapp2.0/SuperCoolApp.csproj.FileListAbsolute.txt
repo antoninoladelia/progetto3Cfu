@@ -1,0 +1,22 @@
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.deps.json
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.runtimeconfig.json
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.runtimeconfig.dev.json
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.dll
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.pdb
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.csprojResolveAssemblyReference.cache
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.csproj.CoreCompileInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.AssemblyInfoInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.AssemblyInfo.cs
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.dll
+C:\Users\Antonino\Desktop\Corso C#\4 lex\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.pdb
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.deps.json
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.runtimeconfig.json
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.runtimeconfig.dev.json
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.dll
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\bin\Debug\netcoreapp2.0\SuperCoolApp.pdb
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.csprojResolveAssemblyReference.cache
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.csproj.CoreCompileInputs.cache
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.AssemblyInfoInputs.cache
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.AssemblyInfo.cs
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.dll
+C:\Users\Antonino\Desktop\Progetto\SuperCoolApp\obj\Debug\netcoreapp2.0\SuperCoolApp.pdb
