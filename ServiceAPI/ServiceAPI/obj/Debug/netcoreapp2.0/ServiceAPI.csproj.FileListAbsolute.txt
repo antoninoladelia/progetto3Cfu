@@ -1,0 +1,55 @@
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.deps.json
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.json
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.dev.json
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csprojResolveAssemblyReference.cache
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfoInputs.cache
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfo.cs
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\corsoing20172018-master\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.deps.json
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.json
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.dev.json
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csprojResolveAssemblyReference.cache
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfoInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfo.cs
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Corso C#\3 lez rest\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.deps.json
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.json
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.dev.json
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csprojResolveAssemblyReference.cache
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfoInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfo.cs
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Corso C#\4 lex\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csprojResolveAssemblyReference.cache
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfoInputs.cache
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfo.cs
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.deps.json
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.json
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.dev.json
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Corso C#\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.deps.json
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.json
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.dev.json
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csprojResolveAssemblyReference.cache
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfoInputs.cache
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfo.cs
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\Antonino\Desktop\Progetto\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.pdb
