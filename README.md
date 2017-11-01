@@ -2,7 +2,7 @@
  
  1)Installare Xampp con server apache e mysql
  
- 2)aprire cartella del progetto, aprire una powershell(shift+tasto destro), e digitare npm install
+ 2)aprire cartella del progetto "SuperCoolApp", aprire una powershell(shift+tasto destro), e digitare npm install
  
  3) installare node.js
  
