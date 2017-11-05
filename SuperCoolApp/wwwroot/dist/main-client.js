@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1161443fc023bde62322"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "32fe20ca3ce78a886cac"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(54)(__webpack_require__.s = 54);
+/******/ 	return hotCreateRequire(56)(__webpack_require__.s = 56);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -721,12 +721,6 @@ module.exports = (__webpack_require__(0))(3);
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(39);
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports) {
 
 /*
@@ -808,6 +802,12 @@ function toComment(sourceMap) {
 
 
 /***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(39);
+
+/***/ }),
 /* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -827,8 +827,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app',
-            template: __webpack_require__(25),
-            styles: [__webpack_require__(38)]
+            template: __webpack_require__(28),
+            styles: [__webpack_require__(39)]
         })
     ], AppComponent);
     return AppComponent;
@@ -844,10 +844,10 @@ var AppComponent = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SearchFilter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrisonersComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -860,6 +860,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
 };
 
 
@@ -899,45 +934,109 @@ var PrisonersComponent = (function () {
         }, function (error) { return console.error(error); });
         console.log("get url " + baseUrl);
     }
-    PrisonersComponent.prototype.addPrisoner = function (name, date, crime) {
-        name = name.trim();
-        date = date.trim();
-        crime = crime.trim();
-        this.prisoner.namePrisoner = name;
-        this.prisoner.dateOfBirth = new Date(date);
-        this.prisoner.crime = crime;
-        // let url = 'http://localhost:63284/api/prisoners/';
-        var body = JSON.stringify({ "namePrisoner": name, "crime": crime, "dateOfBirth": date });
-        //let body = {
-        //    "namePrisoner": name,
-        //    "crime": crime,
-        //    "dateOfBirth": date
-        //}
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({
-            headers: this.headers
+    PrisonersComponent.prototype.addPrisoner = function (name, surname, dateOfBirth, birthPlace, residence, crime, startPen, endPen) {
+        return __awaiter(this, void 0, void 0, function () {
+            var options;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        //formatta i valori in ingresso dalle input text
+                        name = name.trim();
+                        surname = surname.trim();
+                        dateOfBirth = dateOfBirth.trim();
+                        birthPlace = birthPlace.trim();
+                        residence = residence.trim();
+                        crime = crime.trim();
+                        startPen = startPen.trim();
+                        endPen = endPen.trim();
+                        //assegno i valori acquisiti dall'inputext ai campi dell'oggetto
+                        this.prisoner.namePrisoner = name;
+                        this.prisoner.surnamePrisoner = surname;
+                        this.prisoner.dateOfBirth = new Date(dateOfBirth);
+                        this.prisoner.birthPlace = birthPlace;
+                        this.prisoner.residence = residence;
+                        this.prisoner.crime = crime;
+                        this.prisoner.startPenality = new Date(startPen);
+                        this.prisoner.endPenality = new Date(endPen);
+                        options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({
+                            headers: this.headers
+                        });
+                        this.http.put(this.baseUrl + 'api/prisoners/', JSON.stringify(this.prisoner), options).subscribe(function (res) { return console.log(res.json()); });
+                        return [4 /*yield*/, delay(50)];
+                    case 1:
+                        _a.sent();
+                        this.refresh();
+                        return [2 /*return*/];
+                }
+            });
         });
-        this.http.put(this.baseUrl + 'api/prisoners/', JSON.stringify(this.prisoner), options).subscribe(function (res) { return console.log(res.json()); });
-        //.toPromise()
-        //.then(() => this.prisoner)
-        //.catch(this.handleError);
+    };
+    PrisonersComponent.prototype.updatePrisoner = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var options;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        //assegno i valori acquisiti dall'inputext ai campi dell'oggetto
+                        this.prisoner.id = parseInt(document.getElementById("idPrisoner").value);
+                        this.prisoner.namePrisoner = document.getElementById("name").value;
+                        this.prisoner.surnamePrisoner = document.getElementById("surname").value;
+                        this.prisoner.dateOfBirth = new Date(document.getElementById("dateOfBirth").value);
+                        this.prisoner.birthPlace = document.getElementById("birthPlace").value;
+                        this.prisoner.residence = document.getElementById("residence").value;
+                        this.prisoner.crime = document.getElementById("crime").value;
+                        this.prisoner.startPenality = new Date(document.getElementById("startPen").value);
+                        this.prisoner.endPenality = new Date(document.getElementById("endPen").value);
+                        options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({
+                            headers: this.headers
+                        });
+                        this.http.post(this.baseUrl + 'api/prisoners/?id=' + this.prisoner.id, JSON.stringify(this.prisoner), options).subscribe(function (res) { return console.log(res.json()); });
+                        return [4 /*yield*/, delay(150)];
+                    case 1:
+                        _a.sent();
+                        this.refresh();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    PrisonersComponent.prototype.setUpdateValues = function (pris) {
+        document.getElementById("idPrisoner").value = pris.id.toString();
+        document.getElementById("name").value = pris.namePrisoner;
+        document.getElementById("surname").value = pris.surnamePrisoner;
+        document.getElementById("dateOfBirth").value = pris.dateOfBirth.toString();
+        document.getElementById("birthPlace").value = pris.birthPlace;
+        document.getElementById("residence").value = pris.residence;
+        document.getElementById("crime").value = pris.crime;
+        document.getElementById("startPen").value = pris.startPenality.toString();
+        document.getElementById("endPen").value = pris.endPenality.toString();
     };
     PrisonersComponent.prototype.deletePrisoner = function (id) {
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({ headers: this.headers });
-        this.http.delete(this.baseUrl + 'api/prisoners/?id=' + id)
-            .subscribe(function (res) { return console.log(res.json()); });
+        return __awaiter(this, void 0, void 0, function () {
+            var options;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({ headers: this.headers });
+                        this.http.delete(this.baseUrl + 'api/prisoners/?id=' + id)
+                            .subscribe(function (res) { return console.log(res.json()); });
+                        return [4 /*yield*/, delay(50)];
+                    case 1:
+                        _a.sent();
+                        this.refresh();
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
     PrisonersComponent.prototype.refresh = function () {
         window.location.reload();
     };
-    PrisonersComponent.prototype.handleError = function (error) {
-        console.error('An error occurred', error); // for demo purposes only
-        return Promise.reject(error.message || error);
-    };
     PrisonersComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'prisoners',
-            template: __webpack_require__(29),
-            styles: [__webpack_require__(40)]
+            template: __webpack_require__(32),
+            styles: [__webpack_require__(42)]
         }),
         __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BASE_URL')),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"], String])
@@ -945,6 +1044,14 @@ var PrisonersComponent = (function () {
     return PrisonersComponent;
 }());
 
+function delay(ms) {
+    return new Promise(function (resolve) { return setTimeout(resolve, ms); });
+}
+var Prisoner = (function () {
+    function Prisoner() {
+    }
+    return Prisoner;
+}());
 
 
 /***/ }),
@@ -1147,29 +1254,51 @@ module.exports = Html5Entities;
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(0);
+"use strict";
+
+var Observable_1 = __webpack_require__(9);
+var map_1 = __webpack_require__(47);
+Observable_1.Observable.prototype.map = map_1.map;
+//# sourceMappingURL=map.js.map
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(6);
+"use strict";
+
+var Observable_1 = __webpack_require__(9);
+var toPromise_1 = __webpack_require__(37);
+Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
+//# sourceMappingURL=toPromise.js.map
 
 /***/ }),
 /* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(0);
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(6);
+
+/***/ }),
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reflect_metadata__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reflect_metadata__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reflect_metadata___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_reflect_metadata__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_zone_js__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_zone_js__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_zone_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_zone_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dynamic__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_app_module_browser__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dynamic__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_app_module_browser__ = __webpack_require__(16);
 
 
 
@@ -1195,7 +1324,7 @@ var modulePromise = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_p
 
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {/*eslint-env browser*/
@@ -1211,7 +1340,7 @@ var options = {
   name: ''
 };
 if (true) {
-  var querystring = __webpack_require__(32);
+  var querystring = __webpack_require__(35);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   if (overrides.path) options.path = overrides.path;
   if (overrides.timeout) options.timeout = overrides.timeout;
@@ -1331,11 +1460,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(37);
+  var strip = __webpack_require__(38);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(41);
+    overlay = __webpack_require__(43);
   }
 
   var styles = {
@@ -1388,7 +1517,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(42);
+var processUpdate = __webpack_require__(44);
 
 var customHandler;
 var subscribeAllHandler;
@@ -1453,16 +1582,16 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?path=__webpack_hmr&dynamicPublicPath=true", __webpack_require__(43)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?path=__webpack_hmr&dynamicPublicPath=true", __webpack_require__(45)(module)))
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(45);
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1645,7 +1774,7 @@ ansiHTML.reset()
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1656,17 +1785,17 @@ module.exports = function () {
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* unused harmony export getBaseUrl */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module_shared__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module_shared__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_app_app_component__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(3);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1703,22 +1832,22 @@ function getBaseUrl() {
 
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModuleShared; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_app_app_component__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navmenu_navmenu_component__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_home_component__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_cells_cells_component__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navmenu_navmenu_component__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_home_component__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_cells_cells_component__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_prisoners_prisoners_component__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_platform_browser__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_platform_browser__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1771,13 +1900,17 @@ var AppModuleShared = (function () {
 
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CellsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1790,19 +1923,108 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
 
 
 var CellsComponent = (function () {
     function CellsComponent(http, baseUrl) {
         var _this = this;
+        this.http = http;
+        this.baseUrl = baseUrl;
+        this.cell = {};
+        this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]({ 'Content-Type': 'application/json' });
+        this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({ headers: this.headers });
         http.get(baseUrl + 'api/cells').subscribe(function (result) {
             _this.cells = result.json();
         }, function (error) { return console.error(error); });
+        //this.createCells();
     }
+    CellsComponent.prototype.addPrisoner = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.cell.id = parseInt(document.getElementById("cellNumber").value);
+                        this.cell.block = document.getElementById("block").value;
+                        this.cell.prisoner1 = parseInt(document.getElementById("idPrisoner1").value);
+                        this.cell.prisoner2 = parseInt(document.getElementById("idPrisoner2").value);
+                        this.http.post(this.baseUrl + 'api/cells/?id=' + this.cell.id, JSON.stringify(this.cell), this.options).subscribe(function (res) { return console.log(res.json()); });
+                        return [4 /*yield*/, delay(50)];
+                    case 1:
+                        _a.sent();
+                        this.refresh();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    CellsComponent.prototype.createCells = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var i, body;
+            return __generator(this, function (_a) {
+                for (i = 0; i < 10; i++) {
+                    body = {
+                        "id": i,
+                        "block": "A",
+                        "prisoner1": null,
+                        "prisoner2": null
+                    };
+                    this.http.put(this.baseUrl + 'api/cells', JSON.stringify(body), this.options).subscribe(function (res) { return console.log(res.json()); });
+                }
+                return [2 /*return*/];
+            });
+        });
+    };
+    CellsComponent.prototype.setUpdateValues = function (cella) {
+        document.getElementById("cellNumber").value = cella.id.toString();
+        document.getElementById("block").value = cella.block;
+        document.getElementById("idPrisoner1").value = cella.prisoner1.toString();
+        document.getElementById("idPrisoner2").value = cella.prisoner2.toString();
+    };
+    CellsComponent.prototype.refresh = function () {
+        window.location.reload();
+    };
     CellsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'cells',
-            template: __webpack_require__(26)
+            template: __webpack_require__(29),
+            styles: [__webpack_require__(40)]
         }),
         __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])('BASE_URL')),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"], String])
@@ -1810,10 +2032,18 @@ var CellsComponent = (function () {
     return CellsComponent;
 }());
 
+function delay(ms) {
+    return new Promise(function (resolve) { return setTimeout(resolve, ms); });
+}
+var Cell = (function () {
+    function Cell() {
+    }
+    return Cell;
+}());
 
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1832,7 +2062,7 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'home',
-            template: __webpack_require__(27)
+            template: __webpack_require__(30)
         })
     ], HomeComponent);
     return HomeComponent;
@@ -1841,7 +2071,7 @@ var HomeComponent = (function () {
 
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1860,8 +2090,8 @@ var NavMenuComponent = (function () {
     NavMenuComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'nav-menu',
-            template: __webpack_require__(28),
-            styles: [__webpack_require__(39)]
+            template: __webpack_require__(31),
+            styles: [__webpack_require__(41)]
         })
     ], NavMenuComponent);
     return NavMenuComponent;
@@ -1870,10 +2100,10 @@ var NavMenuComponent = (function () {
 
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(undefined);
+exports = module.exports = __webpack_require__(2)(undefined);
 // imports
 
 
@@ -1884,10 +2114,24 @@ exports.push([module.i, "@media (max-width: 767px) {\n    /* On small screens, t
 
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(undefined);
+exports = module.exports = __webpack_require__(2)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\r\nh1 {\r\n    color: white;\r\n    text-align: center;\r\n}\r\n\r\np {\r\n    font-family: verdana;\r\n    font-size: 14px;\r\n}\r\n\r\ninput, combobox {\r\n    margin: 8px 0;\r\n    display: block;\r\n    border: 1px solid #ccc;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n.button {\r\n    background-color: #4CAF50; /* Green */\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n}\r\n\r\n/* Red */\r\n.delete {\r\n    background-color: white;\r\n    color: red;\r\n    border: thin;\r\n    padding: 5px 5px;\r\n}\r\n\r\n\r\n\r\nbody {\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(undefined);
 // imports
 
 
@@ -1898,33 +2142,33 @@ exports.push([module.i, "li .glyphicon {\n    margin-right: 10px;\n}\n\n/* Highl
 
 
 /***/ }),
-/* 21 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(undefined);
+exports = module.exports = __webpack_require__(2)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "\r\nh1 {\r\n    color: white;\r\n    text-align: center;\r\n}\r\n\r\np {\r\n    font-family: verdana;\r\n    font-size: 20px;\r\n}\r\ninput [type=text]\r\n{\r\n    width: 15%;\r\n    padding:12px 20px;\r\n    margin: 8px 0;\r\n    display: block;\r\n    border: 1px solid #ccc;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n.button {\r\n    background-color: #4CAF50; /* Green */\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n}\r\n\r\n/* Red */\r\n.delete {\r\n    background-color: white;\r\n    color: red;\r\n    border: thin;\r\n    padding: 5px 5px;\r\n\r\n}\r\n\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\r\nh1 {\r\n    color: white;\r\n    text-align: center;\r\n}\r\n\r\np {\r\n    font-family: verdana;\r\n    font-size: 14px;\r\n}\r\ninput, combobox {\r\n\r\n    margin: 8px 0;\r\n    display: block;\r\n    border: 1px solid #ccc;\r\n    box-sizing: border-box;\r\n}\r\n\r\n\r\n.button {\r\n    background-color: #4CAF50; /* Green */\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n}\r\n\r\n/* Red */\r\n.delete {\r\n    background-color: white;\r\n    color: red;\r\n    border: thin;\r\n    padding: 5px 5px;\r\n\r\n}\r\n\r\n\r\n\r\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 22 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(24),
-  Html4Entities: __webpack_require__(23),
+  XmlEntities: __webpack_require__(27),
+  Html4Entities: __webpack_require__(26),
   Html5Entities: __webpack_require__(6),
   AllHtmlEntities: __webpack_require__(6)
 };
 
 
 /***/ }),
-/* 23 */
+/* 26 */
 /***/ (function(module, exports) {
 
 var HTML_ALPHA = ['apos', 'nbsp', 'iexcl', 'cent', 'pound', 'curren', 'yen', 'brvbar', 'sect', 'uml', 'copy', 'ordf', 'laquo', 'not', 'shy', 'reg', 'macr', 'deg', 'plusmn', 'sup2', 'sup3', 'acute', 'micro', 'para', 'middot', 'cedil', 'sup1', 'ordm', 'raquo', 'frac14', 'frac12', 'frac34', 'iquest', 'Agrave', 'Aacute', 'Acirc', 'Atilde', 'Auml', 'Aring', 'Aelig', 'Ccedil', 'Egrave', 'Eacute', 'Ecirc', 'Euml', 'Igrave', 'Iacute', 'Icirc', 'Iuml', 'ETH', 'Ntilde', 'Ograve', 'Oacute', 'Ocirc', 'Otilde', 'Ouml', 'times', 'Oslash', 'Ugrave', 'Uacute', 'Ucirc', 'Uuml', 'Yacute', 'THORN', 'szlig', 'agrave', 'aacute', 'acirc', 'atilde', 'auml', 'aring', 'aelig', 'ccedil', 'egrave', 'eacute', 'ecirc', 'euml', 'igrave', 'iacute', 'icirc', 'iuml', 'eth', 'ntilde', 'ograve', 'oacute', 'ocirc', 'otilde', 'ouml', 'divide', 'oslash', 'ugrave', 'uacute', 'ucirc', 'uuml', 'yacute', 'thorn', 'yuml', 'quot', 'amp', 'lt', 'gt', 'OElig', 'oelig', 'Scaron', 'scaron', 'Yuml', 'circ', 'tilde', 'ensp', 'emsp', 'thinsp', 'zwnj', 'zwj', 'lrm', 'rlm', 'ndash', 'mdash', 'lsquo', 'rsquo', 'sbquo', 'ldquo', 'rdquo', 'bdquo', 'dagger', 'Dagger', 'permil', 'lsaquo', 'rsaquo', 'euro', 'fnof', 'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi', 'Omega', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho', 'sigmaf', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega', 'thetasym', 'upsih', 'piv', 'bull', 'hellip', 'prime', 'Prime', 'oline', 'frasl', 'weierp', 'image', 'real', 'trade', 'alefsym', 'larr', 'uarr', 'rarr', 'darr', 'harr', 'crarr', 'lArr', 'uArr', 'rArr', 'dArr', 'hArr', 'forall', 'part', 'exist', 'empty', 'nabla', 'isin', 'notin', 'ni', 'prod', 'sum', 'minus', 'lowast', 'radic', 'prop', 'infin', 'ang', 'and', 'or', 'cap', 'cup', 'int', 'there4', 'sim', 'cong', 'asymp', 'ne', 'equiv', 'le', 'ge', 'sub', 'sup', 'nsub', 'sube', 'supe', 'oplus', 'otimes', 'perp', 'sdot', 'lceil', 'rceil', 'lfloor', 'rfloor', 'lang', 'rang', 'loz', 'spades', 'clubs', 'hearts', 'diams'];
@@ -2077,7 +2321,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 24 */
+/* 27 */
 /***/ (function(module, exports) {
 
 var ALPHA_INDEX = {
@@ -2238,37 +2482,37 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 25 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class='container-fluid'>\n    <div class='row'>\n        <div class='col-sm-3'>\n            <nav-menu></nav-menu>\n        </div>\n        <div class='col-sm-9 body-content'>\n            <router-outlet></router-outlet>\n        </div>\n    </div>\n</div>\n";
 
 /***/ }),
-/* 26 */
-/***/ (function(module, exports) {
-
-module.exports = "<h1>Courses List</h1>\r\n<p *ngIf=\"!cells\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"cells\">\r\n    <thead>\r\n        <tr>\r\n            <th>NameCourse</th>\r\n            \r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let cell of cells\">\r\n            <td>{{ course.NameCourse }}</td>\r\n        </tr>\r\n    </tbody>\r\n</table>";
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports) {
-
-module.exports = "<h1>The Ultimate Super Cool App</h1>\n<p>Welcome to your first single-page application, built with:</p>\n<ul>\n    <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>\n    <li><a href='https://angular.io/'>Angular</a> and <a href='http://www.typescriptlang.org/'>TypeScript</a> for client-side code</li>\n    <li><a href='https://webpack.github.io/'>Webpack</a> for building and bundling client-side resources</li>\n    <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>\n</ul>\n";
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">SuperCoolApp</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/prisoners']\">\r\n                        <span class='glyphicon glyphicon-education'></span> Prisoners\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/cells']\">\r\n                        <span class='glyphicon glyphicon-education'></span> Cells\r\n                    </a>\r\n\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
-
-/***/ }),
 /* 29 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Prisoners List </h1>\r\n<th><label>Search(Case Sensitive) <input #search (keyup)=\"0\" class=\"form-control\"></label></th>\r\n\r\n<p *ngIf=\"!prisoners\"><em>Loading...</em></p>\r\n\r\n\r\n<div class=\"bottom\" align=\"right\">\r\n\r\n    <button type=\"button\" class=\"add btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#myModal\">Add</button>\r\n    <button type=\"button\" class=\"btn btn-default btn-sm\" data-dismiss=\"modal\" (click)=\"refresh()\">Refresh</button>\r\n\r\n</div>\r\n\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n\r\n                <h4 class=\"modal-title\">Add Prisoner</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <p>\r\n                    <label><b> Name: <input #name class=\"form-control\" /></b></label>\r\n                    <label>Date: <input #date class=\"form-control\" /></label>\r\n                    <label>Crime: <input #crime class=\"form-control\" /></label>\r\n                </p>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" (click)=\"addPrisoner(name.value,date.value,crime.value)\" id=\"bntsave\">Save</button>\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n\r\n\r\n<table class='table' *ngIf=\"prisoners\">\r\n    <thead>\r\n        <tr>\r\n            <th>Id</th>\r\n            <th>Name</th>\r\n            <th>Date of Birth</th>\r\n            <th>Crime</th>\r\n\r\n\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let prisoner of prisoners | searchFilter: search.value\">\r\n            <td>{{ prisoner.id }}</td>\r\n            <td>{{ prisoner.namePrisoner }}</td>\r\n            <td>{{ prisoner.dateOfBirth }}</td>\r\n            <td>{{ prisoner.crime }}</td>\r\n            <td ><button  type=\"button\" class=\"delete btn-sm\" data-dismiss=\"modal\" (click)=\"deletePrisoner(prisoner.id)\">X</button></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n";
+module.exports = "\r\n\r\n<h1>Cell List</h1>\r\n<p *ngIf=\"!cells\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"cells\" >\r\n    <thead>\r\n        <tr>\r\n            <th>Number</th>\r\n            <th>Block</th>\r\n            <th>Prisoner1</th>\r\n            <th>Prisoner2</th>\r\n            \r\n        </tr>\r\n    </thead>\r\n    <tbody >\r\n        <tr *ngFor=\"let cell of cells\" >\r\n            <td>{{ cell.id }}</td>\r\n            <td>{{ cell.block }}</td>\r\n            <td>{{ cell.prisoner1 }}</td>\r\n            <td>{{ cell.prisoner2 }}</td>\r\n            <td><button type=\"button\" class=\"add  btn-sm\" data-toggle=\"modal\" data-target=\"#updateModal\" (click)=\"setUpdateValues(cell)\">Update</button></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n\r\n\r\n\r\n<!-- FORM UPDATE MODAL -->\r\n<div id=\"updateModal\" class=\"modal fade\" role=\"dialog\">\r\n\r\n    <div class=\"modal-dialog\">\r\n\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n\r\n                <h4 class=\"modal-title\">Update Prisoner</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n\r\n                <p>\r\n                    <label>Cell N°: <input type=\"text\" id=\"cellNumber\" class=\"form-control\" /></label>\r\n                    <label>Block: <input type=\"text\" id=\"block\" class=\"form-control\" /></label>\r\n                    <label>Id Prisoner 1: <input type=\"text\" id=\"idPrisoner1\" class=\"form-control\" /></label>\r\n                    <label>Id Prisoner 2: <input type=\"text\" id=\"idPrisoner2\" class=\"form-control\" /></label>\r\n                    \r\n                    \r\n                    \r\n                </p>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\"(click)=\"addPrisoner()\" id=\"bntupdate\"> Save</button>\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n\r\n\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n\r\n<style>\r\n    table, th, td {\r\n        border: 1px solid grey;\r\n        border-collapse: collapse;\r\n        padding: 5px;\r\n    }\r\n\r\n        table tr:nth-child(odd) {\r\n            background-color: #f1f1f1;\r\n        }\r\n\r\n        table tr:nth-child(even) {\r\n            background-color: #ffffff;\r\n        }\r\n</style>";
 
 /***/ }),
 /* 30 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Prison Management</h1>\n\n\n";
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">Prison Management</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/prisoners']\">\r\n                        <span class='glyphicon glyphicon-education'></span> Prisoners\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/cells']\">\r\n                        <span class='glyphicon glyphicon-education'></span> Cells\r\n                    </a>\r\n\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Prisoners List </h1>\r\n<th><label>Search(Case Sensitive) <input #search (keyup)=\"0\" class=\"form-control\"></label></th>\r\n\r\n<p *ngIf=\"!prisoners\"><em>Loading...</em></p>\r\n\r\n\r\n<div class=\"bottom\" align=\"right\">\r\n\r\n    <button type=\"button\" class=\"add btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#addModal\">Add</button>\r\n    <button type=\"button\" class=\"btn btn-default btn-sm\" data-dismiss=\"modal\" (click)=\"refresh()\">Refresh</button>\r\n\r\n</div>\r\n<!-- FORM ADD MODAL -->\r\n<div id=\"addModal\" class=\"modal fade\" role=\"dialog\">\r\n    <div class=\"modal-dialog\">\r\n\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n\r\n                <h4 class=\"modal-title\">Add Prisoner</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <p>\r\n                    <label> Name: <input #name class=\"form-control\" /></label>\r\n                    <label> Surname: <input #surname class=\"form-control\" /></label>\r\n                    <label>Date of BirthDay: <input #dateOfBirth class=\"form-control\" placeholder=\"yyyy-mm-dd\" /></label>\r\n                    <label> Birth Place: <input #birthPlace class=\"form-control\" /></label>\r\n                    <label> Residence: <input #residence class=\"form-control\" /></label>\r\n                    <label> Crime: <select #crime>\r\n                                    <option value=\"Furto\">Furto</option>\r\n                                    <option value=\"Rapina\">Rapina</option>\r\n                                    <option value=\"Omicidio\">Omicidio</option>\r\n                                    <option value=\"Stupro\">Stupro</option>\r\n                                    </select></label>\r\n                    <label> Start Penality: <input #startPen class=\"form-control\" placeholder=\"yyyy-mm-dd\" /></label>\r\n                    <label>End Penality: <input #endPen class=\"form-control\" placeholder=\"yyyy-mm-dd\"/></label>\r\n\r\n                </p>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\"\r\n                        (click)=\"addPrisoner(name.value,surname.value,dateOfBirth.value,birthPlace.value,residence.value,crime.value,startPen.value,endPen.value)\" \r\n                        id=\"bntsave\">Save</button>\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n                \r\n\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n\r\n\r\n<!-- FORM UPDATE MODAL -->\r\n<div id=\"updateModal\" class=\"modal fade\" role=\"dialog\">\r\n\r\n    <div class=\"modal-dialog\">\r\n\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n\r\n                <h4 class=\"modal-title\">Update Prisoner</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\" >\r\n                \r\n                <p>\r\n                        <label>Id Prisoner: <input type=\"text\" id=\"idPrisoner\" class=\"form-control\" /></label>\r\n                        <label>Name: <input type=\"text\" id=\"name\" class=\"form-control\" /></label>\r\n                        <label> Surname: <input type=\"text\" id=\"surname\" class=\"form-control\" /></label>\r\n                        <label>Date of BirthDay: <input type=\"text\" id=\"dateOfBirth\" class=\"form-control\" placeholder=\"yyyy-mm-dd\" /></label>\r\n                        <label> Birth Place: <input type=\"text\" id=\"birthPlace\" class=\"form-control\" /></label>\r\n                        <label> Residence: <input type=\"text\" id=\"residence\" class=\"form-control\" /></label>\r\n                        <label>\r\n                            Crime: <select id=\"crime\">\r\n                                <option value=\"Furto\">Furto</option>\r\n                                <option value=\"Rapina\">Rapina</option>\r\n                                <option value=\"Omicidio\">Omicidio</option>\r\n                                <option value=\"Stupro\">Stupro</option>\r\n                            </select>\r\n                        </label>\r\n                        <label> Start Penality: <input type=\"text\" id=\"startPen\" class=\"form-control\" placeholder=\"yyyy-mm-dd\" /></label>\r\n                        <label>End Penality: <input type=\"text\" id=\"endPen\" class=\"form-control\" placeholder=\"yyyy-mm-dd\" /></label>\r\n\r\n</p>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\"\r\n                        (click)=\"updatePrisoner()\"\r\n                        id=\"bntupdate\">\r\n                    Save\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n\r\n\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n<table class='table' *ngIf=\"prisoners\">\r\n    <thead>\r\n        <tr>\r\n            <th>Id</th>\r\n            <th>Name</th>\r\n            <th>Surname</th>\r\n            <th>Date of Birth</th>\r\n            <th>Birth Place</th>\r\n            <th>Residence</th>\r\n            <th>Crime</th>\r\n            <th>Start Penality</th>\r\n            <th>End Penality</th>\r\n\r\n\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let prisoner of prisoners | searchFilter: search.value\">\r\n            <td>{{ prisoner.id }}</td>\r\n            <td>{{ prisoner.namePrisoner }}</td>\r\n            <td>{{ prisoner.surnamePrisoner }}</td>\r\n            <td>{{ prisoner.dateOfBirth }}</td>\r\n            <td>{{ prisoner.birthPlace }}</td>\r\n            <td>{{ prisoner.residence }}</td>\r\n            <td>{{ prisoner.crime }}</td>\r\n            <td>{{ prisoner.startPenality }}</td>\r\n            <td>{{ prisoner.endPenality }}</td>\r\n            <td ><button  type=\"button\" class=\"delete btn-sm\" data-dismiss=\"modal\" (click)=\"deletePrisoner(prisoner.id)\">X</button></td>\r\n            <td><button type=\"button\" class=\"add  btn-sm\" data-toggle=\"modal\"  data-target=\"#updateModal\" (click)=\"setUpdateValues(prisoner)\">Update</button></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n\r\n\r\n";
+
+/***/ }),
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2359,7 +2603,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 31 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2451,18 +2695,18 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 32 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(30);
-exports.encode = exports.stringify = __webpack_require__(31);
+exports.decode = exports.parse = __webpack_require__(33);
+exports.encode = exports.stringify = __webpack_require__(34);
 
 
 /***/ }),
-/* 33 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, global) {/*! *****************************************************************************
@@ -3590,37 +3834,15 @@ var Reflect;
             Function("return this;")());
 })(Reflect || (Reflect = {}));
 //# sourceMappingURL=Reflect.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(44), __webpack_require__(52)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(46), __webpack_require__(54)))
 
 /***/ }),
-/* 34 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(7);
-var map_1 = __webpack_require__(45);
-Observable_1.Observable.prototype.map = map_1.map;
-//# sourceMappingURL=map.js.map
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(7);
-var toPromise_1 = __webpack_require__(36);
-Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
-//# sourceMappingURL=toPromise.js.map
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var root_1 = __webpack_require__(51);
+var root_1 = __webpack_require__(53);
 /* tslint:enable:max-line-length */
 /**
  * Converts an Observable sequence to a ES2015 compliant promise.
@@ -3693,12 +3915,12 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ansiRegex = __webpack_require__(13)();
+var ansiRegex = __webpack_require__(15)();
 
 module.exports = function (str) {
 	return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
@@ -3706,35 +3928,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(19);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
 /* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(20);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -3748,7 +3942,49 @@ module.exports = function (str) {
     
 
 /***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(22);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
 /* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(23);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(24);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*eslint-env browser*/
@@ -3777,7 +4013,7 @@ for (var key in styles) {
   clientOverlay.style[key] = styles[key];
 }
 
-var ansiHTML = __webpack_require__(12);
+var ansiHTML = __webpack_require__(14);
 var colors = {
   reset: ['transparent', 'transparent'],
   black: '181818',
@@ -3792,7 +4028,7 @@ var colors = {
 };
 ansiHTML.setColors(colors);
 
-var Entities = __webpack_require__(22).AllHtmlEntities;
+var Entities = __webpack_require__(25).AllHtmlEntities;
 var entities = new Entities();
 
 exports.showProblems =
@@ -3833,7 +4069,7 @@ function problemType (type) {
 
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -3971,7 +4207,7 @@ module.exports = function(hash, moduleMap, options) {
 
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -3999,72 +4235,72 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(23);
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(28);
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(38);
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(40);
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(41);
 
 /***/ }),
-/* 49 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(42);
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(47);
 
 /***/ }),
-/* 51 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(5);
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(8);
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(9);
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(11);
-__webpack_require__(10);
-module.exports = __webpack_require__(9);
+__webpack_require__(13);
+__webpack_require__(12);
+module.exports = __webpack_require__(11);
 
 
 /***/ })

@@ -1,15 +1,78 @@
-﻿<h1>Courses List</h1>
+﻿
+
+<h1>Cell List</h1>
 <p *ngIf="!cells"><em>Loading...</em></p>
-<table class='table' *ngIf="cells">
+<table class='table' *ngIf="cells" >
     <thead>
         <tr>
-            <th>NameCourse</th>
+            <th>Number</th>
+            <th>Block</th>
+            <th>Prisoner1</th>
+            <th>Prisoner2</th>
             
         </tr>
     </thead>
-    <tbody>
-        <tr *ngFor="let cell of cells">
-            <td>{{ course.NameCourse }}</td>
+    <tbody >
+        <tr *ngFor="let cell of cells" >
+            <td>{{ cell.id }}</td>
+            <td>{{ cell.block }}</td>
+            <td>{{ cell.prisoner1 }}</td>
+            <td>{{ cell.prisoner2 }}</td>
+            <td><button type="button" class="add  btn-sm" data-toggle="modal" data-target="#updateModal" (click)="setUpdateValues(cell)">Update</button></td>
         </tr>
     </tbody>
 </table>
+
+
+
+<!-- FORM UPDATE MODAL -->
+<div id="updateModal" class="modal fade" role="dialog">
+
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                <h4 class="modal-title">Update Prisoner</h4>
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                    <label>Cell N°: <input type="text" id="cellNumber" class="form-control" /></label>
+                    <label>Block: <input type="text" id="block" class="form-control" /></label>
+                    <label>Id Prisoner 1: <input type="text" id="idPrisoner1" class="form-control" /></label>
+                    <label>Id Prisoner 2: <input type="text" id="idPrisoner2" class="form-control" /></label>
+                    
+                    
+                    
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"(click)="addPrisoner()" id="bntupdate"> Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+</style>

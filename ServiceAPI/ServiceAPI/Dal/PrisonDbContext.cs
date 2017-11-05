@@ -13,7 +13,7 @@ namespace ServiceAPI.Dal
                 //.UseMySql(@"Server=localhost;database=corso;uid=corso;pwd=unict;");
                 .UseMySql(@"Server=localhost;database=prison;uid=root;");
                 
-
+           
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,5 +27,7 @@ namespace ServiceAPI.Dal
             }
             base.OnModelCreating(modelBuilder);
         }
+
+
     }
 }

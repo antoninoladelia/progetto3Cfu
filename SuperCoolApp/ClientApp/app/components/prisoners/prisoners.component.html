@@ -6,12 +6,12 @@
 
 <div class="bottom" align="right">
 
-    <button type="button" class="add btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add</button>
+    <button type="button" class="add btn-info btn-sm" data-toggle="modal" data-target="#addModal">Add</button>
     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" (click)="refresh()">Refresh</button>
 
 </div>
-
-<div id="myModal" class="modal fade" role="dialog">
+<!-- FORM ADD MODAL -->
+<div id="addModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
@@ -24,13 +24,27 @@
             <div class="modal-body">
                 <p>
                     <label> Name: <input #name class="form-control" /></label>
-                    <label>Date: <input #date class="form-control" /></label>
-                    <label>Crime: <input #crime class="form-control" /></label>
+                    <label> Surname: <input #surname class="form-control" /></label>
+                    <label>Date of BirthDay: <input #dateOfBirth class="form-control" placeholder="yyyy-mm-dd" /></label>
+                    <label> Birth Place: <input #birthPlace class="form-control" /></label>
+                    <label> Residence: <input #residence class="form-control" /></label>
+                    <label> Crime: <select #crime>
+                                    <option value="Furto">Furto</option>
+                                    <option value="Rapina">Rapina</option>
+                                    <option value="Omicidio">Omicidio</option>
+                                    <option value="Stupro">Stupro</option>
+                                    </select></label>
+                    <label> Start Penality: <input #startPen class="form-control" placeholder="yyyy-mm-dd" /></label>
+                    <label>End Penality: <input #endPen class="form-control" placeholder="yyyy-mm-dd"/></label>
+
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" (click)="addPrisoner(name.value,date.value,crime.value)" id="bntsave">Save</button>
+                <button type="button" class="btn btn-default"
+                        (click)="addPrisoner(name.value,surname.value,dateOfBirth.value,birthPlace.value,residence.value,crime.value,startPen.value,endPen.value)" 
+                        id="bntsave">Save</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                
 
             </div>
         </div>
@@ -39,13 +53,72 @@
 </div>
 
 
+<!-- FORM UPDATE MODAL -->
+<div id="updateModal" class="modal fade" role="dialog">
+
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                <h4 class="modal-title">Update Prisoner</h4>
+            </div>
+
+            <div class="modal-body" >
+                
+                <p>
+                        <label>Id Prisoner: <input type="text" id="idPrisoner" class="form-control" /></label>
+                        <label>Name: <input type="text" id="name" class="form-control" /></label>
+                        <label> Surname: <input type="text" id="surname" class="form-control" /></label>
+                        <label>Date of BirthDay: <input type="text" id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" /></label>
+                        <label> Birth Place: <input type="text" id="birthPlace" class="form-control" /></label>
+                        <label> Residence: <input type="text" id="residence" class="form-control" /></label>
+                        <label>
+                            Crime: <select id="crime">
+                                <option value="Furto">Furto</option>
+                                <option value="Rapina">Rapina</option>
+                                <option value="Omicidio">Omicidio</option>
+                                <option value="Stupro">Stupro</option>
+                            </select>
+                        </label>
+                        <label> Start Penality: <input type="text" id="startPen" class="form-control" placeholder="yyyy-mm-dd" /></label>
+                        <label>End Penality: <input type="text" id="endPen" class="form-control" placeholder="yyyy-mm-dd" /></label>
+
+</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        (click)="updatePrisoner()"
+                        id="bntupdate">
+                    Save
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
 <table class='table' *ngIf="prisoners">
     <thead>
         <tr>
             <th>Id</th>
             <th>Name</th>
+            <th>Surname</th>
             <th>Date of Birth</th>
+            <th>Birth Place</th>
+            <th>Residence</th>
             <th>Crime</th>
+            <th>Start Penality</th>
+            <th>End Penality</th>
 
 
         </tr>
@@ -54,9 +127,17 @@
         <tr *ngFor="let prisoner of prisoners | searchFilter: search.value">
             <td>{{ prisoner.id }}</td>
             <td>{{ prisoner.namePrisoner }}</td>
+            <td>{{ prisoner.surnamePrisoner }}</td>
             <td>{{ prisoner.dateOfBirth }}</td>
+            <td>{{ prisoner.birthPlace }}</td>
+            <td>{{ prisoner.residence }}</td>
             <td>{{ prisoner.crime }}</td>
+            <td>{{ prisoner.startPenality }}</td>
+            <td>{{ prisoner.endPenality }}</td>
             <td ><button  type="button" class="delete btn-sm" data-dismiss="modal" (click)="deletePrisoner(prisoner.id)">X</button></td>
+            <td><button type="button" class="add  btn-sm" data-toggle="modal"  data-target="#updateModal" (click)="setUpdateValues(prisoner)">Update</button></td>
         </tr>
     </tbody>
 </table>
+
+

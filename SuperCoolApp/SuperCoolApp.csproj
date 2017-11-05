@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\cells\cells.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\prisoners\prisonerview.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

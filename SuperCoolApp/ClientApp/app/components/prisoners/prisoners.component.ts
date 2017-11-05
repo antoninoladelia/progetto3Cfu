@@ -30,7 +30,7 @@ export class SearchFilter implements PipeTransform {
 })
 export class PrisonersComponent {
 
-    public prisoners: Prisoner[] ;
+    public prisoners: Prisoner[];
 
     public prisoner: Prisoner = {} as any;
 
@@ -46,65 +46,118 @@ export class PrisonersComponent {
         console.log("get url " + baseUrl);
     }
 
-    addPrisoner(name: string, date: string, crime: string){
+    async addPrisoner(name: string, surname: string, dateOfBirth: string, birthPlace: string, residence: string, crime: string, startPen: string, endPen: string, ) {
 
 
+        //formatta i valori in ingresso dalle input text
         name = name.trim();
-        date = date.trim();
+        surname = surname.trim();
+        dateOfBirth = dateOfBirth.trim();
+        birthPlace = birthPlace.trim();
+        residence = residence.trim();
         crime = crime.trim();
+        startPen = startPen.trim();
+        endPen = endPen.trim();
 
-
+        //assegno i valori acquisiti dall'inputext ai campi dell'oggetto
         this.prisoner.namePrisoner = name;
-        this.prisoner.dateOfBirth = new Date(date);
+        this.prisoner.surnamePrisoner = surname;
+        this.prisoner.dateOfBirth = new Date(dateOfBirth);
+        this.prisoner.birthPlace = birthPlace;
+        this.prisoner.residence = residence;
         this.prisoner.crime = crime;
+        this.prisoner.startPenality = new Date(startPen);
+        this.prisoner.endPenality = new Date(endPen);
 
-       // let url = 'http://localhost:63284/api/prisoners/';
-        let body = JSON.stringify({"namePrisoner": name,"crime": crime,"dateOfBirth": date});
-        //let body = {
-        //    "namePrisoner": name,
-        //    "crime": crime,
-        //    "dateOfBirth": date
-        //}
 
         var options = new RequestOptions({
             headers: this.headers
         });
 
-         this.http.put(this.baseUrl + 'api/prisoners/', JSON.stringify(this.prisoner), options).subscribe(res => console.log(res.json()));
+        this.http.put(this.baseUrl + 'api/prisoners/', JSON.stringify(this.prisoner), options).subscribe(res => console.log(res.json()));
 
-            //.toPromise()
-            //.then(() => this.prisoner)
-            //.catch(this.handleError);
+        await delay(50);
+        this.refresh();
 
     }
 
 
-    deletePrisoner(id: number) {
-        
-        var options = new RequestOptions({headers: this.headers});
+    async updatePrisoner() {
 
+        //assegno i valori acquisiti dall'inputext ai campi dell'oggetto
+        this.prisoner.id = parseInt((<HTMLInputElement>document.getElementById("idPrisoner")).value);
+        this.prisoner.namePrisoner = (<HTMLInputElement>document.getElementById("name")).value;
+        this.prisoner.surnamePrisoner = (<HTMLInputElement>document.getElementById("surname")).value;
+        this.prisoner.dateOfBirth = new Date((<HTMLInputElement>document.getElementById("dateOfBirth")).value);
+        this.prisoner.birthPlace = (<HTMLInputElement>document.getElementById("birthPlace")).value;
+        this.prisoner.residence = (<HTMLInputElement>document.getElementById("residence")).value;
+        this.prisoner.crime = (<HTMLSelectElement>document.getElementById("crime")).value;
+        this.prisoner.startPenality = new Date((<HTMLInputElement>document.getElementById("startPen")).value);
+        this.prisoner.endPenality = new Date((<HTMLInputElement>document.getElementById("endPen")).value);
+
+
+        var options = new RequestOptions({
+            headers: this.headers
+        });
+
+        this.http.post(this.baseUrl + 'api/prisoners/?id=' + this.prisoner.id, JSON.stringify(this.prisoner), options).subscribe(res => console.log(res.json()));
+
+        await delay(150);
+        this.refresh();
+
+    }
+
+
+    setUpdateValues(pris: Prisoner){
+
+        (<HTMLInputElement>document.getElementById("idPrisoner")).value = pris.id.toString();
+        (<HTMLInputElement>document.getElementById("name")).value = pris.namePrisoner;
+        (<HTMLInputElement>document.getElementById("surname")).value = pris.surnamePrisoner;
+        (<HTMLInputElement>document.getElementById("dateOfBirth")).value = pris.dateOfBirth.toString();
+        (<HTMLInputElement>document.getElementById("birthPlace")).value = pris.birthPlace;
+        (<HTMLInputElement>document.getElementById("residence")).value = pris.residence;
+        (<HTMLSelectElement>document.getElementById("crime")).value = pris.crime;
+        (<HTMLInputElement>document.getElementById("startPen")).value = pris.startPenality.toString();
+        (<HTMLInputElement>document.getElementById("endPen")).value = pris.endPenality.toString();
+    }
+
+
+    async deletePrisoner(id: number) {
+
+        var options = new RequestOptions({ headers: this.headers });
 
         this.http.delete(this.baseUrl + 'api/prisoners/?id=' + id)
             .subscribe(res => console.log(res.json()));
+
+        await delay(50);
+        this.refresh();
     }
 
 
 
     refresh(): void {
-    window.location.reload();
+        window.location.reload();
     }
 
-
-    private handleError(error: any): Promise<any> {
-        console.error('An error occurred', error); // for demo purposes only
-        return Promise.reject(error.message || error);
-    }
 
 }
 
-interface Prisoner {
+
+
+function delay(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+class Prisoner {
+
     id: number;
     namePrisoner: string;
+    surnamePrisoner: string;
     dateOfBirth: Date;
+    residence: string;
+    birthPlace: string;
     crime: string;
+    startPenality: Date;
+    endPenality: Date;
 }

@@ -4,6 +4,7 @@ using ServiceAPI.Dal;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ServiceAPI
@@ -11,6 +12,9 @@ namespace ServiceAPI
     [Route ("api")]
     public class CourseController:Controller
     {
+        static readonly object setupLock = new object();
+        static readonly SemaphoreSlim parallelism = new SemaphoreSlim(2);
+
         [HttpPut("cells")]
         public async Task<IActionResult> CreateCourse([FromBody]Cell Cell)
     {
@@ -22,6 +26,20 @@ namespace ServiceAPI
         }
         return Ok();
     }
+
+        [HttpPost("cells")]
+        public async Task<IActionResult> UpdateCell([FromBody]Cell cell)
+        {
+            using (var context = new PrisonDbContext())
+            {
+                context.Cells.Update(cell);
+                await context.SaveChangesAsync();
+                return Ok();
+            }
+        }
+
+
+
 
         [HttpGet("cells")]
         public async Task<IActionResult> GetCourse() {

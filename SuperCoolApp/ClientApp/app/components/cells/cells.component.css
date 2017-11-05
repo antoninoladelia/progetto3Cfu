@@ -8,8 +8,8 @@ p {
     font-family: verdana;
     font-size: 14px;
 }
-input, combobox {
 
+input, combobox {
     margin: 8px 0;
     display: block;
     border: 1px solid #ccc;
@@ -34,8 +34,9 @@ input, combobox {
     color: red;
     border: thin;
     padding: 5px 5px;
-
 }
 
 
 
+body {
+}
