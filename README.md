@@ -1,8 +1,13 @@
 To import the database you must:
+
 1)Open a browser window and type "localhost"
+
 2)Open PhpMyAdmin
+
 3)Click on import 
+
 4)Chooise "database.sql"
+
 5)Click run.
 
 (User = root , with no password)
